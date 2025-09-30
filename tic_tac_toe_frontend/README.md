@@ -1,16 +1,35 @@
-# tic_tac_toe_frontend
+# Tic Tac Toe - Ocean Professional
 
-A new Flutter project.
+A modern, minimalist Flutter Tic Tac Toe game featuring:
+- Single-player (vs basic AI) and local two-player modes
+- Ocean Professional theme (Blue #2563EB, Amber #F59E0B)
+- Clean UI with rounded corners, subtle gradients, and shadows
+- Responsive board layout
+- Status banner and restart/new game controls
 
-## Getting Started
+## Run
 
-This project is a starting point for a Flutter application.
+1. Ensure Flutter SDK (3.29+) is installed.
+2. From project root:
+   ```
+   cd tic_tac_toe_frontend
+   flutter pub get
+   flutter run
+   ```
+3. Choose Single or Two player mode using the segmented control at the bottom. Tap cells to play.
 
-A few resources to get you started if this is your first Flutter project:
+## Structure
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- lib/
+  - main.dart (entry)
+  - theme/app_theme.dart (Ocean theme)
+  - models/game_models.dart (enums and GameState)
+  - controllers/game_controller.dart (game logic + basic AI)
+  - ui/
+    - screens/home_screen.dart
+    - widgets/board_widget.dart, board_tile.dart, status_banner.dart, control_bar.dart
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Notes
+
+- The AI is basic but provides a reasonable challenge.
+- UI follows separation of concerns with clear layering.
